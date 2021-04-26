@@ -25,14 +25,17 @@
 .row::before,
 .row::after {
   display: table;
-  content: '';
+  content: "";
 }
 
 .row::after {
   clear: both;
 }
 
-.col-3, .col-4, .col-6, .col-12 {
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
   float: left;
 
   /* Gutters:
@@ -46,10 +49,12 @@
 }
 
 /* Mobile defaults */
-.col-3, .col-4, .col-6, .col-12 {
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
   width: 100%;
 }
-
 
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
@@ -58,16 +63,18 @@
     width: 25%;
   }
 
-  /* 4 columns */
+  /* 4 columns, 4/12 in % */
   .col-4 {
+    width: 33.333333333333333333333333333333%;
   }
 
-  /* 6 columns */
+  /* 6 columns, 6/12 in % */
   .col-6 {
-
+    width: 50%;
   }
 
-  /* 12 columns */
+  /* 12 columns, you got this no? */
   .col-12 {
+    width: 100%;
   }
 }
